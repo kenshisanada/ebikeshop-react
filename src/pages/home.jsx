@@ -12,6 +12,7 @@ import callicon from '../assets/img/icons/call-icon.png'
 import mailicon from '../assets/img/icons/mail-icon.png'
 import fbicon1 from '../assets/img/icons/fb-icon1.png'
 import twittericon from '../assets/img/icons/twitter-icon.png'
+import { Link } from 'react-router-dom'
 
 
 export const Home = () => {
@@ -68,7 +69,7 @@ export const Home = () => {
                 <h1 class="cycles_text">BrandA Bike A</h1>
                 <p class="lorem_text">This is the description and specification for Bike A. released in 2023.</p>
                 <div class="btn_main">
-                    <div class="buy_bt"><a href="#">Buy Now</a></div>
+                    <div class="buy_bt"><Link to="/brand-a">Buy Now</Link></div>
                     <h4 class="price_text">Price <span style={{color: '#f7c17b'}}>$</span> <span style={{color: '#325662'}}>200</span></h4>
                 </div>
             </div>
@@ -80,7 +81,7 @@ export const Home = () => {
                 <h1 class="cycles_text">BrandB Bike B</h1>
                 <p class="lorem_text">This is the description and specification for Bike A. released in 2023.</p>
                 <div class="btn_main">
-                    <div class="buy_bt"><a href="#">Buy Now</a></div>
+                    <div class="buy_bt"><Link to="/brand-b">Buy Now</Link></div>
                     <h4 class="price_text">Price <span style={{color: '#f7c17b'}}>$</span> <span style={{color: '#325662'}}>200</span></h4>
                 </div>
                 </div>
@@ -91,7 +92,7 @@ export const Home = () => {
                 </div>
             </div>
         </div>
-        <div class="read_bt_1" style={{textAlign: 'center', marginTop: '50px'}}><a href="#">Read More</a></div>
+        <div class="read_bt_1" style={{textAlign: 'center', marginTop: '50px'}}><Link href="/brand-a">Read More</Link></div>
         </div>
         {/*end of ourbikes section*/}
         {/*Contact Us*/}
@@ -107,17 +108,17 @@ export const Home = () => {
                     </div>
                     </div>
                     <div class="col-lg-4 col-sm-12 card footer-card">
-                    <div class="call_text"><a href="#"><img src={mapicon} alt='map-icon' /><span class="padding_left_0">location</span></a></div>
-                    <div class="call_text"><a href="#"><img src={callicon} alt='call-icon' /><span class="padding_left_0">+01 888 447766</span></a></div>
-                    <div class="call_text"><a href="#"><img src={mailicon} alt='mail-icon' /><span class="padding_left_0">ebikeshop@gmail.com</span></a></div>
+                    <div class="call_text"><img src={mapicon} alt='map-icon' /><span class="padding_left_0">location</span></div>
+                    <div class="call_text"><img src={callicon} alt='call-icon' /><span class="padding_left_0">+01 888 447766</span></div>
+                    <div class="call_text"><img src={mailicon} alt='mail-icon' /><span class="padding_left_0">ebikeshop@gmail.com</span></div>
                     <div class="social_icon">
                         <ul>
-                            <li style={{marginLeft: '20px'}}><a href="#"><img src={fbicon1} alt='fb-icon-1' /></a></li>
-                            <li style={{marginLeft: '30px'}}><a href="#"><img src={twittericon} alt='twitter-icon' /></a></li>
+                            <li style={{marginLeft: '20px'}}><img src={fbicon1} alt='fb-icon-1' /></li>
+                            <li style={{marginLeft: '30px'}}><img src={twittericon} alt='twitter-icon' /></li>
                         </ul>
                     </div>
                     <input type="text" class="email_text" placeholder="Enter Your Email" name="Enter Your Email" />
-                    <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                    <div class="subscribe_bt">Subscribe</div>
                     </div>
                 </div>
             </div>

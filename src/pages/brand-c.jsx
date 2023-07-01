@@ -4,7 +4,7 @@ import { BrandcProducts } from '../products';
 import { ShopContext } from '../context/shopcontext';
 
 export const BrandC = () => {
-  const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
+  const { addToCart, removeFromCart,updateCartItemCount,  cartItems } = useContext(ShopContext);
 
   const handleAddToCart = (id) => {
     addToCart(id);
@@ -16,6 +16,7 @@ export const BrandC = () => {
 
   const handleCartItemChange = (event, id) => {
     const newCartItemAmount = parseInt(event.target.value) || 0;
+    updateCartItemCount(newCartItemAmount, id);
     // Update cart item amount in ShopContext
     // You need to implement this function in your ShopContext
     // Example: updateCartItemAmount(id, newCartItemAmount);

@@ -4,7 +4,7 @@ import { BrandaProducts } from '../products';
 import { ShopContext } from '../context/shopcontext';
 
 export const BrandA = () => {
-  const { addToCart, removeFromCart, cartItems } = useContext(ShopContext);
+  const { addToCart, removeFromCart, updateCartItemCount, cartItems } = useContext(ShopContext);
 
   const handleAddToCart = (id) => {
     addToCart(id);
@@ -15,14 +15,11 @@ export const BrandA = () => {
       removeFromCart(id);
     }
   };
-  
 
   const handleCartItemChange = (event, id) => {
     const newCartItemAmount = parseInt(event.target.value) || 0;
     const clampedValue = Math.max(newCartItemAmount, 0);
-    // Update cart item amount in ShopContext
-    // You need to implement this function in your ShopContext
-    // Example: updateCartItemAmount(id, clampedValue);
+    updateCartItemCount(clampedValue, id); // Call the updateCartItemCount function
   };
 
   return (
