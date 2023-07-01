@@ -24,7 +24,7 @@ export const BrandC = () => {
 
   return (
     <div className='brand-a'>
-      <Header slogan='Brand A' />
+      <Header slogan='Brand C' />
       <div className='container shop-a'>
         {BrandcProducts.map((product) => (
           <div className='card card-brand-a' key={product.id}>
