@@ -17,7 +17,7 @@ export const Navbar =() => {
                                 <Link className="nav-link active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <button className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button className="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                 Our Cycle
                                 </button>
                                 <ul className="dropdown-menu">
