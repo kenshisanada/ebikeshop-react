@@ -1,0 +1,551 @@
+
+/*navbar section */
+.nav-logo {
+  width: 170px;
+  height: auto;
+}
+
+.nav-item {
+  margin:20px;
+}
+.nav-link {
+  font-weight: bold;
+  font-size: 20px;
+}
+.dropdown-item {
+  font-weight: bold;
+}
+
+/* end of navbar section */
+
+
+/*header section */
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top:50px;  
+  flex-direction: row;
+}
+.header-img {
+  max-width: 100%;
+}
+.header-slogan {
+  font-weight:bold; 
+  font-size: 50px;
+  margin-right:300px;
+}
+.slogan-container {
+  max-width: 50%;
+  margin-top: 100px;
+}
+
+.header-brand-a {
+  font-weight:bold; 
+  font-size: 50px;
+  margin-right:300px;
+}
+
+  /*header for mobile device */
+  @media only screen and (max-width: 767px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top:150px;
+    }
+    .header-img {
+      width: 100%; /* Set the width to 100% for mobile devices */
+    }
+    .header-slogan {
+      display:none;
+    }
+
+  }
+
+  /*header for tablet screen*/
+  @media only screen and (min-width: 780px) and (max-width:1023px) {
+    .header {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top:200px;
+    }
+    .header-img {
+      width: 100%; /* Set the width to 100% for mobile devices */
+    }
+  }
+/* end of header section */
+
+/* shop advantage section */
+.shopadv-since {
+  border: 7px solid black;
+  border-radius:20%;
+  border-width: 7px 2px 7px 2px;
+  width: 140px;
+}
+
+.card-shopadv {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+
+.cards-shopadv-subtext {
+  font-size:24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.shopadv-b {
+  position: relative;
+}
+
+.shopadv-b::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/img/bicycle-icon-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.07; /* Adjust the opacity value here */
+}
+
+.shopadv-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 200px;
+  margin-left: 235px;
+  justify-content: center;
+}
+
+  /*shopadv for mobile device */
+  @media only screen and (max-width: 767px){
+    .shopadv-b::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../assets/img/bicycle-icon-background.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size:cover;
+      opacity: 0.07; /* Adjust the opacity value here */
+    }
+    .shopadv-c {
+      align-items: center; 
+      justify-content: center;
+    }
+    .shopadv-since {
+      width: 100px; /* Adjust the width to your desired size */
+      height: 100px; /* Adjust the height to your desired size */
+      border-width: 4px 1px 4px 1px; /* Adjust the border-width as needed */
+    }
+    
+    .card-shopadv {
+      width: 80px; /* Adjust the width to your desired size */
+      height: 80px; /* Adjust the height to your desired size */
+      border-width: 3px; /* Adjust the border-width as needed */
+    }
+    
+    .cards-shopadv-subtext {
+      font-size: 10px; /* Adjust the font size as needed */
+    }
+    .shopadv-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+      margin-left: 30px;
+      justify-content: center;
+    }
+    
+  }
+
+/* end of shopadv section */
+
+
+/*ourbikes section */
+.image_2 img{
+  width:500px;
+  height: auto;
+}
+  /*ourbikes for mobile device*/
+  @media only screen and (max-width: 767px) {
+    .image_2 img{
+      width:370px;
+      height: auto;
+    }
+  }
+
+/* end of ourbikes section */
+
+
+/* contact us section */
+.contact_section {
+    width: 100%;
+    float: left;
+    background-color: #355764;
+    height: auto;
+    padding-bottom: 90px;
+}
+
+.contact_main {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.request_text {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.email-bt {
+    color: #292929;
+    width: 100%;
+    height: 55px;
+    font-size: 18px;
+    padding: 20px;
+    background-color: #fefeff;
+    border: 0px;
+    border-radius: 30px;
+}
+
+input.email-bt::placeholder {
+    color: #292929;
+}
+
+.massage-bt {
+    color: #292929;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    padding: 40px 20px 10px;
+    background-color: #fefeff;
+    border: 0px;
+    border-radius: 30px;
+}
+
+textarea#comment::placeholder {
+    color: #292929;
+}
+
+.send_btn {
+    width: 170px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.send_btn a {
+    width: 100%;
+    float: left;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 0px;
+    background-color: #f7c17b;
+    border-radius: 10px;
+}
+
+.send_btn a:hover {
+    color: #000;
+    background-color: #ffffff;
+}
+/* contact section end*/
+/* footer section start*/
+
+.footer_section {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: cover;
+}
+.map_main{
+    width: 100%;
+    float: left;
+}
+.call_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+.email_text {
+    width: 70%;
+    float: left;
+    font-size: 16px;
+    color: black;
+    background-color: #ffffff;
+    padding: 8px 15px;
+    margin-top: 40px;
+    border: 0px;
+}
+
+.subscribe_bt {
+    width: 180px;
+    float: left;
+    margin-top: 15px;
+}
+.subscribe_bt a {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #171717;
+    padding: 8px;
+    margin-top: 20px;
+}
+.subscribe_bt a:hover{
+    color: #9e9c9c;
+    background-color: #ffffff;
+}
+
+
+
+
+.call_text a{
+    color: #dfdfdf;
+}
+.call_text a:hover{
+    color: #f7c17b;
+}
+.padding_left_0{
+    padding-left: 15px;
+}
+
+.social_icon {
+    width: 100%;
+    float: left;
+    padding-top: 20px;
+}
+
+.social_icon ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.social_icon li {
+    float: left;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #ffffff;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    color: #151515;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.copyright_text a {
+    color: #151515;
+}
+
+.copyright_text a:hover {
+    color: #f7c17b;
+}
+
+.margin_top_90 {
+    margin-top: 90px;
+}
+
+.margin_90 {
+    margin: 90px 0px;
+}
+
+#navbarSupportedContent{
+    transform: translateX(100vw);
+}
+
+#navbarSupportedContent.nav-normal{
+    transform: none;
+}
+
+.footer-card {
+  background-color: rgba(51, 50, 50, 0.911);
+}
+/* end of contact us */
+
+
+/* shop-a-section */
+
+.shop-a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 100px;
+  margin-left: 100px;
+  justify-content: center;
+  margin-top:100px;
+}
+  /*shop-a mobile section */
+  @media only screen and (max-width: 767px){
+    .shop-a {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+      margin-left: 0px;
+      justify-content: center;
+      margin-top:70px;
+    }
+    .pricetag-a {
+      font-size:10px;
+    }
+  }
+
+  /*end of shop-a mobile section */
+  /*shop-a tablet section */
+  @media only screen and (min-width: 780px) and (max-width:1028px){
+    .shop-a {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 100px;
+      margin-left: 45px;
+      justify-content: center;
+      margin-top:100px;
+    }
+    .pricetag-a {
+      font-size:20px;
+    }
+  }
+
+/* end of shop-a section */
+
+/* sign-in section */
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  margin:auto;
+  margin-top: 200px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+  @media only screen and (max-width: 767px){
+    .signin-logo {display:none;
+        }
+    .form-signin {
+      margin-left: 55px;
+    }
+  }
+/* end of sign-in section */
+
+
+/*sign-up section*/
+.signup {
+  padding: 20px;
+  margin-top: 100px;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+/*end of sign-up section */
+
+
+/* etc */
+.brand-bikes {
+ width: 362px;
+ height: 200px; 
+}
+@media only screen and (max-width: 767px){
+  /*shopping input cart button */
+  .input-group .btn {
+    font-size: 10px; /* Adjust the font size as per your preference */
+    padding: 0.4rem 0.4rem;
+    font-weight: bold;
+  }
+}
+
+/*cart section */
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  margin-top: 200px;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 25px;
+  margin: 30px;
+}
+
+.cartItem img {
+  width: 200px;
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size : 30px;
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+.checkout button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(19,19,19);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* end of cart section */
