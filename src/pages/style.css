@@ -15,7 +15,16 @@
 .dropdown-item {
   font-weight: bold;
 }
-
+  @media only screen and (max-width: 767px){
+    .navbar{
+      background-color:whitesmoke;
+    }
+  }
+  @media only screen and (min-width: 800px) and (max-width:1028px){
+    .navbar{
+      background-color:whitesmoke;
+    }
+  }
 /* end of navbar section */
 
 
@@ -72,6 +81,9 @@
     }
     .header-img {
       width: 100%; /* Set the width to 100% for mobile devices */
+    }
+    .header-slogan {
+      display:none;
     }
   }
 /* end of header section */
@@ -166,6 +178,15 @@
     }
     
   }
+  @media only screen and (min-width: 780px) and (max-width:1023px){
+    .shopadv-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+      margin-left: 30px;
+      justify-content: center;
+    }
+  }
 
 /* end of shopadv section */
 
@@ -182,6 +203,13 @@
       height: auto;
     }
   }
+  @media only screen and (min-width: 780px) and (max-width:1023px){
+    .image_2 img{
+      width:350px;
+      height: auto;
+    }
+  }
+  
 
 /* end of ourbikes section */
 
